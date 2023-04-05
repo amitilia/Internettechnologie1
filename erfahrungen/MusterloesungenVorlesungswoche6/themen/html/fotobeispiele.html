@@ -64,6 +64,21 @@
 	</p>
 	
 	
+	<!--- 
+		Verwendung des Picture Elements 
+		Diese 
+	--->
+	
+<p>	Betrachten Sie das nachfolgende Foto und vergrößern, bzw. verkleinern Sie das Browserfenster und beobachten Sie, wie das passende Bild automatisch geladen wird.
+	<picture>
+		<source media="(min-width: 1500px)" srcset="../../bilder/kuechentisch900.jpg">
+		<source media="(min-width: 950px)" srcset="../../bilder/kuechentisch700.jpg">
+		<source media="(min-width: 850px)" srcset="../../bilder/kuechentisch500.jpg">
+		<!--- Fallback für alte Browser --->
+		<img src="../../bilder/kuechentisch500.jpg" alt="Ein Beispielbild mit einer Breite von 500 Pixeln">
+	</picture>
+	
+</p>	
 	
 </body>
 </html>
