@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fotos in HTML-Seiten einbinden</title>
+</head>
+
+<body>
+<h1>Beispiele eingebundener Fotos</h1>
+	<p>Das Beispiel zeigt verschiedene eingebundene Fotos mit unterschiedlicher Breite.</p>
+	<table width="459" border="1">
+	  <tbody>
+	    <tr>
+	      <th width="172" scope="col">Dateiname</th>
+	      <th width="28" scope="col">&nbsp;</th>
+	      <th width="177" scope="col">Übertragungszeit</th>
+        </tr>
+	    <tr>
+	      <td>kuechentisch_original.jpg</td>
+	      <td>7,7 MB</td>
+	      <td>&nbsp;</td>
+        </tr>
+	    <tr>
+	      <td>kuechentisch2500Pixel.jpg</td>
+	      <td>1,1 MB</td>
+	      <td>&nbsp;</td>
+        </tr>
+	    <tr>
+	      <td>kuechentisch1300Pixel.jpg</td>
+	      <td>342 KB</td>
+	      <td>&nbsp;</td>
+        </tr>
+	    <tr>
+	      <td>kuechentisch500.jpg</td>
+	      <td>77 KB</td>
+	      <td>&nbsp;</td>
+        </tr>
+      </tbody>
+</table>
+	<p>&nbsp;</p>
+	<p>
+		<figure>
+			<img src="../../bilder/kuechentisch500.jpg" alt="Ein Beispielbild mit einer Breite von 500 Pixeln">
+			<figcaption>Ein Beispielbild mit einer Breite von 500 Pixeln</figcaption>
+		</figure>	
+	</p>
+	<p>
+<figure>
+  <img src="../../bilder/kuechentisch1300Pixel.jpg" alt="Ein Beispielbild mit einer Breite von 1300 Pixeln">
+			<figcaption>Ein Beispielbild mit einer Breite von 1300 Pixeln</figcaption>
+</figure>	
+	</p>
+	<p>
+<figure>
+  <img src="../../bilder/kuechentisch2500Pixel.jpg" alt="Ein Beispielbild mit einer Breite von 2500 Pixeln">
+			<figcaption>Ein Beispielbild mit einer Breite von 2500 Pixeln</figcaption>
+</figure>	
+	</p>
+	<p>
+<figure>
+  <img src="../../bilder/kuechentisch_original.jpg" alt="Ein Beispielbild in der Originalauflösung">
+			<figcaption>Das Originalbild</figcaption>
+</figure>	
+	</p>
+	
+	
+	<!--- 
+		Verwendung des Picture Elements 
+		Diese 
+	--->
+	
+<p>	Betrachten Sie das nachfolgende Foto und vergrößern, bzw. verkleinern Sie das Browserfenster und beobachten Sie, wie das passende Bild automatisch geladen wird.
+	<picture>
+		<source media="(min-width: 1500px)" srcset="../../bilder/kuechentisch900.jpg">
+		<source media="(min-width: 950px)" srcset="../../bilder/kuechentisch700.jpg">
+		<source media="(min-width: 850px)" srcset="../../bilder/kuechentisch500.jpg">
+		<!--- Fallback für alte Browser --->
+		<img src="../../bilder/kuechentisch500.jpg" alt="Ein Beispielbild mit einer Breite von 500 Pixeln">
+	</picture>
+	
+</p>	
+	
+</body>
+</html>
