@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Alles zum Thema Video in HTML verwenden</title>
+</head>
+
+<body>
+	<h1>HTML Elemente für die Verwendung von Videos</h1>
+	<p>
+	<h2>Auf ein eigenes Video verlinken</h2>
+	
+		<video autoplay controls muted width="640" src="../../filme/it1-testfilm.mp4"  >
+			<track src="untertitel.vtt" kind="subtitles" srclang="de" label="Deutsch" default ="true">
+		Ihr Browser unterstützt das Video-Element nicht.
+		</video>
+	</p>
+	<p>
+	<h2>Ein Video von YouTube einbinden</h2>
+	<h3>Als iFrame</h3>
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/10866tPsS-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	
+	
+	
+	
+	<h3>Als Object</h3>
+	<object width="400" height="225" src="https://www.youtube.com/embed/10866tPsS-Y" ></object>
+	<h3> Als Embed-Element</h3>
+	<embed width="400" height="225" src="https://www.youtube.com/embed/10866tPsS-Y">	
+	</p>
+	
+</body>
+</html>
