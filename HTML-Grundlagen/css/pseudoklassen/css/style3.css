@@ -1,7 +1,0 @@
-
-:target { background: lightgrey; }
-div#einblenden { display: none; }
-div#einblenden:target { display: block; }
-
-
-
